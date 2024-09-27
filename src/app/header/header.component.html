@@ -1,0 +1,8 @@
+<div class="sticky-header">
+    <div class="tabs">
+      <div class="tab" *ngFor="let tab of tabs; let i = index" (click)="selectTab(i)"
+           [class.active]="selectedTab === i">
+        {{ tab.title }}
+      </div>
+    </div>
+  </div>
