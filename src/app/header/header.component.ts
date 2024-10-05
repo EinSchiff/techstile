@@ -2,6 +2,7 @@ import { Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRe
 import { HomeComponent } from '../home/home.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { Router } from '@angular/router';
+import { title } from 'process';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,8 @@ export class HeaderComponent implements OnInit {
   selectedTab = 0; // Initially selected tab index
   tabs = [
     { title: 'Home', route: '/home' },
-    { title: 'About Us', route: '/about-us' },
+    { title: 'About us', route: '/about-us' },
+    { title: 'Request sample', route: '/request-sample'}
   ];
 
   constructor(private router: Router) { }
